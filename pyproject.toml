@@ -1,0 +1,22 @@
+# pyproject.toml
+[tool.poetry]
+name = "inventory-assistant"
+version = "0.1.0"
+description = "Inventory Management Simulation"
+authors = ["Mohamed Arshath <marshath@gmail.com>"]
+packages = [
+    { include = "inventory_assistant", from = "." }
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+sqlmodel = "^0.0.8"
+typer = "^0.9.0"  # for CLI interface
+loguru = "^0.7.0" # for logging
+rich = "^13.0.0"  # for beautiful console output
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0.0"
+black = "^23.0.0"
+isort = "^5.0.0"
+ipykernel = "^6.29.5"
