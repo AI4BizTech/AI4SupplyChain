@@ -11,6 +11,7 @@ LLMs and Agentic Workflow can help automate some of the time-consuming tasks in 
     - LLMs can generate report based on the outcome from executing the queries
 
 ## Demand Forcasting
+.....
 
 ## Inventory Management Simulation
 ### Business Context
