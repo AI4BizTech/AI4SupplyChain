@@ -1,5 +1,18 @@
 # Gen AI Powered Supply Chain Management
-## Inventory Management Simulation Project Specification
+This initiative will harness the capabilities of Large Language Models (LLMs) and agentic workflow to revolutionize and streamline supply chain management processes.
+
+LLMs and Agentic Workflow can help automate some of the time-consuming tasks in supply chain management, boosting efficiency and make the system more accessible through human language. Examples include but not limited to:
+
+- **Translating Users' Needs into Formal Queries**
+    - Users can query the system in human language, such as “Which products had stockout and at which warehouses last week?" or “What was the number or percentage of instances last month when the total shipping cost exceeded $50,000?” etc.
+    - LLMs can translate such queries into formal queries into the system to get executed
+
+- **Generating Reports for Users' Queries**
+    - LLMs can generate report based on the outcome from executing the queries
+
+## Demand Forcasting
+
+## Inventory Management Simulation
 ### Business Context
 We operate a laptop distribution business managing inventory across three warehouses. We stock various laptop models from different manufacturers (e.g., Dell, HP, Lenovo, Apple). Each laptop model has specific stock requirements due to varying demand patterns and price points. Premium models require lower minimum stock levels but higher value tracking, while popular mid-range models need larger stock buffers.
 ### Overview
@@ -75,7 +88,7 @@ This project simulates our laptop inventory management system with an AI assista
 
 ### Technical Structure
 ```
-INVENTORY-ASSISTANT/
+AI4SupplyChain/
 ├── inventory_assistant/
 │   ├── assistent/
 │   │   ├── __init__.py
