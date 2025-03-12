@@ -1,11 +1,12 @@
-# Inventory Management Simulation Project Specification
-## Business Context
+# Gen AI Powered Supply Chain Management
+## Inventory Management Simulation Project Specification
+### Business Context
 We operate a laptop distribution business managing inventory across three warehouses. We stock various laptop models from different manufacturers (e.g., Dell, HP, Lenovo, Apple). Each laptop model has specific stock requirements due to varying demand patterns and price points. Premium models require lower minimum stock levels but higher value tracking, while popular mid-range models need larger stock buffers.
-## Overview
+### Overview
 This project simulates our laptop inventory management system with an AI assistant that monitors stock levels and generates reports. The simulation operates on a day-by-day basis with automated inventory movements.
 
-## Core Components
-### Initial Stock Simulation
+### Core Components
+#### Initial Stock Simulation
 - Initial laptop inventory setup at system start
 - For each laptop model:
     - Generate random quantities within model-specific ranges
@@ -16,12 +17,12 @@ This project simulates our laptop inventory management system with an AI assista
     - Ensure minimum stock levels per model
     - Calculate and record initial inventory value
 
-### Time Management System
+#### Time Management System
 - Each simulation step represents one day
 - At the start of each day, the simulation engine calculates random inventory movements
 - Daily cycle: Initial check → Random transactions → End of day report
 
-### Inventory Structure
+#### Inventory Structure
 - Laptop Properties
     - Model ID (unique identifier)
     - Brand and Model Name
@@ -30,12 +31,12 @@ This project simulates our laptop inventory management system with an AI assista
     - Minimum Stock Level
     - Category (Premium/Mid-range/Budget)
 
-2. Storage System
+- Storage System
     - Three warehouses (A, B, C)
     - Each laptop model stored across locations
     - Total model quantity is sum across warehouses
 
-### Transaction System
+#### Transaction System
 - Purchase transactions only in initial phase
 - Transaction records include:
     - Date
@@ -46,7 +47,7 @@ This project simulates our laptop inventory management system with an AI assista
     - Transaction ID
     - Purchase Value
 
-#### Inventory Assistant
+##### Inventory Assistant
 - Performs daily morning inventory check
 - Generates daily report containing:
     - Current stock levels per laptop model
@@ -55,24 +56,24 @@ This project simulates our laptop inventory management system with an AI assista
     - Total inventory value by category
     - High-value items tracking (Premium models)
 
-### Implementation Phases
-#### Phase 1: Core Setup
+#### Implementation Phases
+##### Phase 1: Core Setup
     1. Implement laptop inventory data structures
     2. Set up warehouse system
     3. Create initial stock simulation
     4. Create time management loop
 
-#### Phase 2: Transaction System
+##### Phase 2: Transaction System
     1. Implement purchase transaction logging
     2. Create random transaction generator
     3. Add transaction validation
 
-#### Phase 3: Assistant Implementation
+##### Phase 3: Assistant Implementation
     1. Create daily report generator
     2. Implement stock level monitoring
     3. Add basic alerting for low stock
 
-## Technical Structure
+### Technical Structure
 ```
 INVENTORY-ASSISTANT/
 ├── inventory_assistant/
