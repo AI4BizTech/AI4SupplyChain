@@ -10,6 +10,8 @@ LLMs and Agentic Workflow can help automate some of the time-consuming tasks in 
 - **Generating Reports for Users' Queries**
     - LLMs can generate report based on the outcome from executing the queries
 
+We will start from damand forcasting and inventory management simulation, and gradually roll out other sub-systems of the supply chain management system
+
 ## Demand Forcasting
 .....
 
