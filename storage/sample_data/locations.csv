@@ -1,0 +1,6 @@
+location_id,name,address,warehouse_type
+MAIN-WH,Main Warehouse,"100 Warehouse Dr, Industrial Park, NY 10001",main
+STORE-A,Retail Store A,"200 Shopping St, Downtown, NY 10002",store
+STORE-B,Retail Store B,"300 Mall Ave, Uptown, NY 10003",store
+DIST-CENTER,Distribution Center,"400 Logistics Blvd, Suburbs, NY 10004",distribution
+OUTLET-1,Outlet Store 1,"500 Outlet Plaza, Queens, NY 10005",store

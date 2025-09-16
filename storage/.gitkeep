@@ -1,0 +1,2 @@
+# This file ensures the storage directory is tracked by git
+# The actual database files and user data will be created at runtime
