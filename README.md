@@ -44,4 +44,4 @@ Built with Python 3.11+, FastAPI, SQLite, LangChain, OpenAI GPT-4o mini, and Str
 - **[Product Requirements](docs/PRODUCT_REQUIREMENTS.md)** - Complete business requirements, market research, and feature specifications
 - **[Software Architecture](docs/Software_Architecture.md)** - Technical architecture, system design, and implementation details
 
-For detailed setup instructions and development guidelines, refer to the documentation files above.
+For detailed setup instructions and development guidelines, refer to the above-mentioned documents.
