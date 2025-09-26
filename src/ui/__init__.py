@@ -1,3 +1,0 @@
-"""
-Streamlit user interface
-"""

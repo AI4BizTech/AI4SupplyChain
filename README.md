@@ -2,26 +2,47 @@
 
 AI-Powered Dynamic Inventory and Demand Planning System
 
-## Quick Start
+## Development Commands
 
-1. **Install dependencies**
+### Quick Development Setup
 ```bash
-uv sync  # or pip install -e .
+# Install all dependencies (backend + frontend)
+make install
+
+# Run both backend and frontend in development
+make dev
+
+# Or run individually
+make dev-backend    # Backend only (http://localhost:8000)
+make dev-frontend   # Frontend only (http://localhost:3000)
 ```
 
-2. **Set up environment**
+### Backend Development
 ```bash
-cp env.example .env
-# Edit .env with your API keys
+# Install UV package manager first (one time setup)
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Backend specific commands
+make install-backend
+make dev-backend
+make test-backend
+
+# Manual commands if needed
+cd backend && uv sync
+cd backend && uv run uvicorn src.api.main:app --reload
 ```
 
-3. **Run the application**
+### Frontend Development
 ```bash
-# Streamlit Dashboard
-uv run streamlit run src/ui/main.py
+# Frontend specific commands
+make install-frontend
+make dev-frontend
+make test-frontend
 
-# FastAPI Server
-uv run uvicorn src.api.main:app --reload
+# Manual commands if needed
+cd frontend && bun install
+cd frontend && bun run dev    # Uses Bun's built-in dev server
+cd frontend && bun run build  # Uses Bun's built-in bundler
 ```
 
 ## Features
@@ -34,14 +55,11 @@ uv run uvicorn src.api.main:app --reload
 - Inventory Optimization
 - Conversational AI Assistant
 
-## Architecture
 
-Built with Python 3.11+, FastAPI, SQLite, LangChain, OpenAI GPT-4o mini, and Streamlit.
-
-## 📚 Documentation
-
-### **Core Documents**
+## **Core Documents**
 - **[Product Requirements](docs/PRODUCT_REQUIREMENTS.md)** - Complete business requirements, market research, and feature specifications
 - **[Software Architecture](docs/Software_Architecture.md)** - Technical architecture, system design, and implementation details
 
-For detailed setup instructions and development guidelines, refer to the above-mentioned documents.
+
+## Acknowledgement
+The first version of this project incorporates portion of the code from https://github.com/moarshy/supplychain/, which followed the same core documents as mentioned above (see [Core Documents](#core-documents) section). It implements basic operations of an inventory management system (product, supplier, and location management, inventory tracking, and transaction processing) with a FastAPI + SQLModel backend and a React frontend. It serves as a foundation upon which we can build more advanced features, such as Intelligent Demand Forecasting, Advanced Analytics and Optimization, Conversational AI Assistant, etc.
