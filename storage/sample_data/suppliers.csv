@@ -1,6 +1,0 @@
-supplier_id,name,email,phone,address,lead_time_days,payment_terms,minimum_order_qty,performance_rating
-SUP-001,TechGear Solutions,contact@techgear.com,+1-555-0101,"123 Tech Ave, Silicon Valley, CA 94025",5,Net 30,100,4.5
-SUP-002,Office Furniture Pro,sales@officefurniture.com,+1-555-0202,"456 Business Blvd, Chicago, IL 60601",14,Net 45,50,4.2
-SUP-003,ElectroSupply Inc,orders@electrosupply.com,+1-555-0303,"789 Electronics Way, Austin, TX 73301",7,2/10 Net 30,75,4.0
-SUP-004,Paper & More Co,info@paperandmore.com,+1-555-0404,"321 Supply St, Portland, OR 97201",3,COD,200,4.8
-SUP-005,Global Components,support@globalcomp.com,+1-555-0505,"654 Import Lane, Miami, FL 33101",21,Net 60,25,3.8
