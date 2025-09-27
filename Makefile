@@ -94,7 +94,7 @@ format:
 		cd backend && uv run isort src/ tests/ || true; \
 	fi
 
-# Data Commands
+# Data Commands, must run the following command from the backend directory to use the correct .venv environment
 sample-data:
 	@echo "📊 Generating sample data..."
 	cd backend && uv run python scripts/generate_sample_data.py

@@ -8,7 +8,7 @@
 - **Date**: 9/2025
 - **Product Name**: AI4SupplyChain
 - **Document Owner**: Development Team
-
+- **Contact**: Henry Jiang, AI4BizTech.Team@gmail.com
 ---
 
 ## 1. Executive Summary
