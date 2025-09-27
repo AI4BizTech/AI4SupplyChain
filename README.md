@@ -15,6 +15,14 @@ make dev
 # Or run individually
 make dev-backend    # Backend only (http://localhost:8000)
 make dev-frontend   # Frontend only (http://localhost:3000)
+
+# Populate database with some sample data(must run the following command from the backend directory to use the correct .venv environment):
+cd backend 
+uv run python scripts/generate_sample_data.py
+
+# Navigate to the following URL to see the UI of the system
+http://localhost:3000
+
 ```
 
 ### Backend Development
