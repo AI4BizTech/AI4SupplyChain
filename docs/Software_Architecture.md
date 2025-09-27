@@ -5,6 +5,7 @@
 - **Date**: 9/2025
 - **Product Name**: AI4SupplyChain
 - **Document Owner**: Development Team
+- **Contact**: Henry Jiang, AI4BizTech.Team@gmail.com
 
 ---
 
@@ -70,7 +71,7 @@ This document describes the current architecture of AI4SupplyChain based on the 
   - Enums: `TransactionType`
   - API models: `ProductRead/Create/Update`, etc.
 - The database configuration module provides session creation, initialization, and health checks
-- Upon first initialization, the data layer will create a new /data directory at the project root and generate the SQLite database file with the necessary schema.
+- Upon first initialization, the data layer will create a new /data directory under the backend directory and generate the SQLite database file with the necessary schema.
 
 ### Services Layer
 - Service modules implement business operations
